@@ -1,0 +1,30 @@
+/* This snippet is responsible for changing calendars dates with notes view to better represent importnant dates*/
+
+#calendar-container .day.has-note{
+    background-color: var(--interactive-accent);
+    color: beige;
+}
+
+#calendar-container .day.has-note .dot-container .dot{
+    background-color: var(--interactive-accent);
+}
+
+
+:root .nav-folder-title[data-path="Semestr 1"],
+:root .nav-folder-title[data-path="Semestr 2"],
+:root .nav-folder-title[data-path="Semestr 3"]{
+    font-size: 20px;
+    justify-content: center;
+    padding-inline-start: 8px !important;
+    pointer-events: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    
+}
+
+.nav-folder-title[data-path="Semestr 1"] .collapse-icon > svg,
+.nav-folder-title[data-path="Semestr 2"]  .collapse-icon > svg,
+.nav-folder-title[data-path="Semestr 3"]  .collapse-icon > svg{
+    display: none;
+}

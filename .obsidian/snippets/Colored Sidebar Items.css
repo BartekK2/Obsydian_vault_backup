@@ -1,0 +1,773 @@
+/*------------------------------------------------------------------------------
+               Obsidian Colored Sidebar Items by CyanVoxel v2.0.0               
+
+                   A colored sidebar CSS snippet inspired by
+                   the "Coloured Folders" snippet by Lithou.
+
+This snippet targets folders beginning with numbered prefixes, and applies full
+color formatting based on the root colors listed below. The prefixes are both
+customizable and extensible; feel free to change, add, and remove them based on
+your own titles and vault structure! By default I have a range of 8+1 colors,
+however I've provided some other common colors as a starting point for your own
+customization. Just swap out the color variable names in the prefix groups.
+
+------------------------------------------------------------------------------*/
+
+:root {
+  /* ================================ Colors ================================ */
+  --red: #e22c3c;                /* Default Prefix: None */
+  --red-orange: #e9404b;         /* Default Prefix: None */
+  --orange: #ee6748;             /* Default Prefix: None */
+  --amber: #fa9f50;              /* Default Prefix: None */
+  --yellow: #ffd85e;             /* Default Prefix: None */
+  --algebra: #97e768;            /* Default Prefix: Algebra */
+  --analiza: #52eea3;            /* Default Prefix: Analiza */
+  --excalidraw: #51e1e9;         /* Default Prefix: Excalidraw */
+  --mat-dys: #54b6f8;            /* Default Prefix: Matematyka Dyskretna */
+  --pliki: #437cf3;              /* Default Prefix: Pliki */
+  --templatki: #cf7be9;          /* Default Prefix: Templatki */
+  --unix: #c939c7;               /* Default Prefix: Unix */
+  --wdi: #da5272;                /* Default Prefix: Wstęp do informatyki */
+  --wyklady-i-zadania: #e7a048;          /* Default Prefix: 99 */
+  --cool-gray: #515768;          /* Default Prefix: 99 */
+  --default-text-color: #d0d0d0;
+  --highlight: #fff;
+  --shadow: #0b0c2c;
+
+  --nav-item-weight-hover: bold;
+
+}
+
+/* Light Theme Specific Properties */
+.theme-light {
+  --contrast-color: var(--shadow);
+  --default-text-color: var(--shadow);
+  --bg-contrast-amount: 70%;
+  --fg-contrast-amount: 30%;
+  --medium-contrast-amount: 60%;
+  --active-contrast-amount: 30%;
+
+  /* Darker Versions of Bright Colors for Light Theme */
+  --yellow: color-mix(in srgb, #ffd85e 90%, var(--shadow));
+  --algebra: color-mix(in srgb, #97e768 90%, var(--shadow));
+  --analiza: color-mix(in srgb, #52eea3 85%, var(--shadow));
+  --excalidraw: color-mix(in srgb, #51e1e9 85%, var(--shadow));
+  --cool-cyan: color-mix(in srgb, #43cfea 85%, var(--shadow));
+  --mat-dys: color-mix(in srgb, #54b6f8 90%, var(--shadow));
+}
+
+/* Dark Theme Specific Properties */
+.theme-dark {
+  --contrast-color: var(--highlight);
+  --bg-contrast-amount: 15%;
+  --fg-contrast-amount: 40%;
+  --medium-contrast-amount: 20%;
+  --active-contrast-amount: 10%;
+}
+
+/* All Folder Titles */
+.nav-folder-title {
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Narrower Padding on Desktop*/
+@media only screen and (min-width: 768px) {
+  .nav-file-title,
+  .nav-folder-title {
+    /* padding: 3px 5px 2px 4px !important; */
+    padding-top: 3px !important;
+    padding-right: 5px !important;
+    padding-bottom: 2px !important;
+    padding-left: 15px;
+  }
+}
+
+/*
+============================ Folder Title Prefixes =============================
+The following groups of prefixes are divided by the numbering prefix that they
+target. For example, prefix 'Algebra' targets any folder titles beginning with 'Algebra',
+such as 'Algebra - Maps of Content'. The only other piece of information that changes
+between the prefix groups are the color variables. Change or expand on any of
+these to suit your own folder structure and vault theme!
+*/
+
+/* ------------------------------- Algebra Prefix -------------------------------- */
+.nav-folder-title[data-path^="Algebra"] {
+  color: var(--algebra);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--algebra) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--algebra) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--algebra) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--algebra) 60%, transparent);
+}
+.nav-folder-title[data-path^="Algebra"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--algebra) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Algebra"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--algebra) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Algebra"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--algebra) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--algebra) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--algebra) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--analiza) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Analiza Prefix -------------------------------- */
+.nav-folder-title[data-path^="Analiza"] {
+  color: var(--analiza);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--analiza) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--analiza) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--analiza) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--analiza) 60%, transparent);
+}
+.nav-folder-title[data-path^="Analiza"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--analiza) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Analiza"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--analiza) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Analiza"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--analiza) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--analiza) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--analiza) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--analiza) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Excalidraw Prefix -------------------------------- */
+.nav-folder-title[data-path^="Excalidraw"] {
+  color: var(--excalidraw);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--excalidraw) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--excalidraw) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--excalidraw) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--excalidraw) 60%, transparent);
+}
+.nav-folder-title[data-path^="Excalidraw"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--excalidraw) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Excalidraw"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--excalidraw) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Excalidraw"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--excalidraw) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--excalidraw) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--excalidraw) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--excalidraw) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Matematyka Dyskretna Prefix -------------------------------- */
+.nav-folder-title[data-path^="Matematyka Dyskretna"] {
+  color: var(--mat-dys);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--mat-dys) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--mat-dys) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--mat-dys) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--mat-dys) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="Matematyka Dyskretna"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--mat-dys) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Matematyka Dyskretna"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--mat-dys) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Matematyka Dyskretna"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--mat-dys) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--mat-dys) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--mat-dys) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--mat-dys) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Pliki Prefix -------------------------------- */
+.nav-folder-title[data-path^="Pliki"] {
+  color: var(--pliki);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--pliki) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--pliki) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--pliki) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--pliki) 60%, transparent);
+}
+.nav-folder-title[data-path^="Pliki"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--pliki) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Pliki"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--pliki) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Pliki"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--pliki) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--pliki) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--pliki) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--pliki) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Templatki Prefix -------------------------------- */
+.nav-folder-title[data-path^="Pliki"] {
+  color: var(--pliki);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--pliki) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--pliki) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--pliki) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--pliki) 60%, transparent);
+}
+.nav-folder-title[data-path^="Pliki"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--pliki) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Pliki"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--pliki) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Pliki"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--pliki) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--pliki) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--pliki) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--pliki) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Templatki Prefix -------------------------------- */
+.nav-folder-title[data-path^="Templatki"] {
+  color: var(--templatki);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--templatki) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--templatki) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--templatki) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(in srgb, var(--templatki) 60%, transparent);
+}
+.nav-folder-title[data-path^="Templatki"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--templatki) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Templatki"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--templatki) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Templatki"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--templatki) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--templatki) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--templatki) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--templatki) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Unix Prefix -------------------------------- */
+.nav-folder-title[data-path^="Unix"] {
+  color: var(--unix);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--unix) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--unix) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--unix) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--unix) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="Unix"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--unix) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Unix"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--unix) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Unix"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--unix) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--unix) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--unix) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--unix) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Wstęp do informatyki Prefix -------------------------------- */
+.nav-folder-title[data-path^="Wstęp do informatyki"] {
+  color: var(--wdi);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--wdi) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--wdi) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--wdi) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--wdi) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="Wstęp do informatyki"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--wdi) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Wstęp do informatyki"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--wdi) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Wstęp do informatyki"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--wdi) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--wdi) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--wdi) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--wdi) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- Wykłady i zadania Prefix -------------------------------- */
+.nav-folder-title[data-path^="Wyk"] {
+  color: var(--wyklady-i-zadania);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--wyklady-i-zadania) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--wyklady-i-zadania) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--wyklady-i-zadania) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--wyklady-i-zadania) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="Wyk"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--wyklady-i-zadania) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="Wyk"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--wyklady-i-zadania) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="Wyk"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--wyklady-i-zadania) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--wyklady-i-zadania) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--wyklady-i-zadania) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--wyklady-i-zadania) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* ------------------------------- 99 Prefix -------------------------------- */
+.nav-folder-title[data-path^="99"] {
+  color: var(--cool-gray);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--cool-gray) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--cool-gray) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--cool-gray) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--cool-gray) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path^="99"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--cool-gray) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--cool-gray) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path^="99"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--cool-gray) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--cool-gray) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--cool-gray) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--cool-gray) var(--active-contrast-amount),
+    transparent
+  );
+}

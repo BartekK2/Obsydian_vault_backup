@@ -1,0 +1,13 @@
+sprawi
+\mathbb{#}
+\mathbb{R}
+pochodn
+twierdze
+twierdzenia
+twierdzenie
+Twierdzenia
+Twierdzenie
+ABC
+ABCD
+\mathbb{N}
+\in

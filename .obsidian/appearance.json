@@ -1,0 +1,11 @@
+{
+  "cssTheme": "Tokyo Night",
+  "accentColor": "#ff7a75",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "custom-admonitions.a6b3e1"
+  ],
+  "nativeMenus": false,
+  "baseFontSize": 18,
+  "showRibbon": true
+}

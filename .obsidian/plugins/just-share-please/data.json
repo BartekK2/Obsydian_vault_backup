@@ -1,0 +1,14 @@
+{
+  "url": "https://jsp.ellpeck.de",
+  "shared": [
+    {
+      "id": "b2027eba",
+      "password": "e0e9c675943fed2ccee376f84264d247",
+      "path": "Analiza/Sesja.md"
+    }
+  ],
+  "stripFrontmatter": true,
+  "includeNoteName": true,
+  "unshareDeletedFiles": true,
+  "autoUpdateShares": false
+}

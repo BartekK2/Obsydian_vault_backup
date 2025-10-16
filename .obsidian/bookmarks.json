@@ -1,0 +1,198 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1741123075758,
+      "items": [
+        {
+          "type": "group",
+          "ctime": 1759875021566,
+          "items": [],
+          "title": "Semestr 3"
+        },
+        {
+          "type": "group",
+          "ctime": 1759874756191,
+          "items": [],
+          "title": "Równania różniczkowe i różnicowe"
+        },
+        {
+          "type": "group",
+          "ctime": 1759874756191,
+          "items": [],
+          "title": "Rachunek prawdopodobieństwa i statystyka"
+        },
+        {
+          "type": "group",
+          "ctime": 1759874756191,
+          "items": [],
+          "title": "Programowanie Obiektowe"
+        },
+        {
+          "type": "group",
+          "ctime": 1759874756191,
+          "items": [],
+          "title": "Programowanie Funkcyjne"
+        },
+        {
+          "type": "group",
+          "ctime": 1759874756191,
+          "items": [],
+          "title": "Inżynieria wymagań i jakości"
+        },
+        {
+          "type": "group",
+          "ctime": 1759874756191,
+          "items": [],
+          "title": "Fizyka 2"
+        },
+        {
+          "type": "group",
+          "ctime": 1759874756191,
+          "items": [],
+          "title": "Dyskretna 2"
+        },
+        {
+          "type": "group",
+          "ctime": 1759874756191,
+          "items": [],
+          "title": "Bazy Danych"
+        },
+        {
+          "type": "group",
+          "ctime": 1759874756191,
+          "items": [],
+          "title": "Wstęp do aplikacji internetowych"
+        },
+        {
+          "type": "file",
+          "ctime": 1758139383516,
+          "path": "XD.md",
+          "subpath": "#^-"
+        },
+        {
+          "type": "group",
+          "ctime": 1741125969498,
+          "items": [],
+          "title": "Semestr 2"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123075789,
+          "items": [],
+          "title": "Algorytmy i struktury danych"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123075789,
+          "items": [],
+          "title": "Algorytmy i struktury danych"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Analiza 2"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Angielski"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Fizyka"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Logika"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Ochrona własności intelektualnej"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Programowanie imperatywne"
+        },
+        {
+          "type": "group",
+          "ctime": 1741125972443,
+          "items": [],
+          "title": "Semestr 1"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Algebra"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Analiza"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Excalidraw"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Kalendarz"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Matematyka Dyskretna"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [
+            {
+              "type": "group",
+              "ctime": 1741123129298,
+              "items": [],
+              "title": "Excalidraw"
+            }
+          ],
+          "title": "Pliki"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Templatki"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Unix"
+        },
+        {
+          "type": "group",
+          "ctime": 1741123129298,
+          "items": [],
+          "title": "Wstęp do informatyki"
+        }
+      ],
+      "title": "sortspec"
+    }
+  ]
+}

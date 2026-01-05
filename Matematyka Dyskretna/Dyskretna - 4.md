@@ -89,7 +89,6 @@ Czyli po prostu wszystkie możliwe podziały $n$-elementowego zbioru na dowolną
 $$\begin{gathered}
 B(n+1)=\sum^{n}_{i=0}{\binom{n}{i}B(i)}
 \end{gathered}$$
-
 ###### Wytłumaczenie intuicyjne lematu:
 
 Najlepiej to pokazać zaczynając od końca czyli od $i=n$. Wtedy wyobrażamy sobie że dzielimy $n$ elementów na bloki ale dodatkowo $n+1$ element ma swój blok. Jednakże jeśli $i$ będzie mniejsze od $n$ np. $i=n-1$ to dzielimy $n-1$ elementów na bloki a 2 elementy muszą znaleźć miejsce w którymś spośród tych bloków. Itd itd...

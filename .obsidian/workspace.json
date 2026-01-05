@@ -4,63 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "0f08a37f2fb24b32",
+        "id": "a8824a292d95e675",
         "type": "tabs",
         "children": [
           {
-            "id": "6e35bb082585b0a6",
+            "id": "1c374950ff202d14",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matematyka Dyskretna/Zadania/Stare Kolokwia.md",
+                "file": "Dyskretna 2/Przygotowania_do_kolokwium1/fortuna/1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stare Kolokwia"
+              "title": "1"
             }
           },
           {
-            "id": "8776218b0c4e16aa",
+            "id": "3a23d29012205ec9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matematyka Dyskretna/Zadania/Dyskretna - zadania 2 zasada Dirichleta.md",
+                "file": "Bazy Danych/Projekt/pbd_pt_9_45_zesp_19_raport1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dyskretna - zadania 2 zasada Dirichleta"
+              "title": "pbd_pt_9_45_zesp_19_raport1"
             }
           },
           {
-            "id": "85b664ad886cb172",
+            "id": "b17a93783cf99c7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matematyka Dyskretna/Dyskretna - 2.md",
+                "file": "Analiza 2/Analiza 8 Ekstrema.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dyskretna - 2"
-            }
-          },
-          {
-            "id": "d84ec0ea73197c4d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Matematyka Dyskretna/Dyskretna - 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Dyskretna - 1"
+              "title": "Analiza 8 Ekstrema"
             }
           }
         ],
@@ -121,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5
+    "width": 200
   },
   "right": {
     "id": "bedbb5f39b451748",
@@ -229,7 +215,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 277.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,60 +226,58 @@
       "daily-notes:Otwórz codzienną notatkę": false,
       "command-palette:Otwórz listę poleceń": false,
       "graph:Otwórz graf": false,
-      "random-note:Otwórz losową notatkę": false,
       "templates:Wstaw szablon": false,
       "custom-sort:Toggle custom sorting": false,
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "85b664ad886cb172",
+  "active": "b17a93783cf99c7e",
   "lastOpenFiles": [
-    "README.md",
-    "Matematyka Dyskretna/Zadania/Dyskretna - zadania 2 zasada Dirichleta.md",
-    "Matematyka Dyskretna/Zadania/Stare Kolokwia.md",
-    "Matematyka Dyskretna/Dyskretna - 2.md",
-    "Matematyka Dyskretna/Na plus.md",
-    "Matematyka Dyskretna/Sesja.md",
-    "Matematyka Dyskretna/Zadania/Stare_zadania_do_przepisania.md",
-    "Matematyka Dyskretna/Zadania/Dyskretna - zadania 1 kombinacje.md",
-    "Matematyka Dyskretna/Dyskretna - 1.md",
-    "Analiza 2/Analiza 6 Szeregi Fouriera.md",
-    "Analiza 2/Analiza 7 Rachunek różniczkowy funkcji wielu zmiennych.md",
-    "Analiza 2/Analiza 11 Całeczki.md",
-    "Analiza 2/Analiza 10 Funkcje uwikłane.md",
-    "Analiza 2/Analiza 8 Ekstrema.md",
-    "Analiza 2/Analiza 9 Ekstrema warunkowe.md",
-    "Semestr 3",
+    "Równania różniczkowe i różnicowe/RURY 8.md",
+    "Równania różniczkowe i różnicowe/RURY 7.md",
+    "Równania różniczkowe i różnicowe/RURY 9.md",
+    "Równania różniczkowe i różnicowe/RURY 3.md",
+    "Równania różniczkowe i różnicowe/RURY 4.md",
+    "Równania różniczkowe i różnicowe/Przygotowywanie do kolokwium.md",
+    "Pasted image 20260105232054.png",
+    "Równania różniczkowe i różnicowe/RURY 6.md",
+    "Równania różniczkowe i różnicowe/RURY 5.md",
+    "Równania różniczkowe i różnicowe/RURY 2.md",
+    "Równania różniczkowe i różnicowe/RURY 1.md",
+    "Rachunek prawdopodobieństwa i statystyka/Bez nazwy.md",
+    "Pasted image 20260103172120.png",
+    "Bazy Danych/Projekt/pbd_pt_9_45_zesp_19_raport2.md",
+    "Bazy Danych/Cale info przed kolosem.md",
+    "Bazy Danych/Projekt/pbd_pt_9_45_zesp_19_raport1.md",
+    "Dyskretna 2/Plusy/8.md",
+    "Pliki/obraz_2025-12-10_215545211-Photoroom.png",
     "Pliki/Do zrobienia.md",
-    "Równania różniczkowe i różnicowe",
-    "Fizyka 2",
-    "Rachunek prawdopodobieństwa i statystyka",
-    "Inżynieria wymagań i jakości",
-    "Bazy Danych",
-    "Wstęp do aplikacji internetowych",
-    "Dyskretna 2",
-    "Programowanie Obiektowe",
-    "Programowanie Funkcyjne",
-    "Enroll 3 sem.md",
-    "XD.md",
-    "Semestr 3/xd.md",
-    "Semestr 3/XDD.md",
-    "Pliki/2025-08-14.md",
-    "Semestr 3.md",
-    "Pliki/Pasted image 20250825003229.png",
-    "Pliki/diagram-20250703.png",
-    "Pliki/Pasted image 20250917205153.png",
-    "Algorytmy i struktury danych/Algorytmy Sortowania i inne podstawowe.md",
-    "Algorytmy i struktury danych/Algorytmy dynamiczne.md",
-    "Algorytmy i struktury danych/Algorytmy grafowe.md",
-    "Pliki/white-Photoroom.png",
-    "Pliki/white-Photoroom.jpg",
-    "Pliki/diagram-20250825 (1).png",
-    "Pliki/2025-09-05.md",
-    "Pliki/diagram-20250707.png",
-    "Pliki/diagram-20250705.png",
-    "Pliki/diagram-20250703 (2).png",
-    "Pliki/diagram-20250703 (1).png",
+    "Rachunek prawdopodobieństwa i statystyka/RPiS 5.md",
+    "Bez nazwy.md",
+    "Pliki/obraz_2025-12-18_013251645-Photoroom.png",
+    "Rachunek prawdopodobieństwa i statystyka/RPiS 6.md",
+    "Rachunek prawdopodobieństwa i statystyka/Zadania/Zmienne losowe jednowymiarowe - część II.md",
+    "Rachunek prawdopodobieństwa i statystyka/Zadania/Rozkłady.md",
+    "Rachunek prawdopodobieństwa i statystyka/Zadania/Zmienne losowe jednowymiarowe - część I.md",
+    "Rachunek prawdopodobieństwa i statystyka/Zadania/Przestrzenie probabilistyczne i prawdopodobieństwo.md",
+    "Rachunek prawdopodobieństwa i statystyka/RPiS 4.md",
+    "Rachunek prawdopodobieństwa i statystyka/RPiS 1.md",
+    "Dyskretna 2/Plusy",
+    "Bazy Danych/Projekt",
+    "Pliki/Pasted image 20251209003531.png",
+    "Pliki/Pasted image 20251209001625.png",
+    "Pliki/0.png",
+    "Pliki/an_indukcja3.gif",
+    "Pliki/indukcja_elektromagnetyczna.mp4",
+    "Fizyka 2/Nauka",
+    "Dyskretna 2/Przygotowania_do_kolokwium1/fortuna",
+    "Dyskretna 2/Przygotowania_do_kolokwium1",
+    "Pliki/Pasted image 20251117204901.png",
+    "Pliki/Pasted image 20251117204850.png",
+    "Rachunek prawdopodobieństwa i statystyka/Zadania",
+    "0.tiff",
+    "Fizyka 2/Sprawozdania",
+    "Fizyka/Bez nazwy",
     "Pliki/Bez nazwy.canvas"
   ]
 }

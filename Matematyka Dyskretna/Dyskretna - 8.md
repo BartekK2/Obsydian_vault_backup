@@ -12,7 +12,7 @@
 **Grafem** nazywamy parę $G=(V,E)$, w której $V$ oznacza skończony zbiór **wierzchołków**, natomiast $E \subseteq \{\{u,v\}: u,v \in V\}$ jest zbiorem **krawędzi**. 
 ![[diagram-20250122.png]]
 **Rząd grafu** - ilość wierzchołków $|V|$
-**Wielkość grafu** - ilość krawędzi $|E|$ 
+**Wielkość/Rozmiar grafu** - ilość krawędzi $|E|$ 
 
 **Stopień wierzchołka** - Ilość krawędzi wychodząca z wierzchołka
 **Stopień maksymalny w grafie** - maksymalny *stopień wierzchołka* w grafie oznaczamy $\Delta(G)$

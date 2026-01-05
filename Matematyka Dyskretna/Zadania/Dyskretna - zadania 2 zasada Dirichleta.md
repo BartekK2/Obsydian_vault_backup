@@ -79,6 +79,9 @@ Dla \ n=3\\
 Np: \ 1 \ oraz \ 1111 \ maja \ ta \ sama \ reszte:\\
 1111-111=3a+1-3b-1=3(a-b), \ a,b \in \mathbb{Z}
 \end{gathered}$$
+
+---
+
 ###### 7. Uzasadnij, że istnieje niezerowa liczba całkowita k, dla której część ułamkowa (mantysa $x$ czyli $x-\lfloor x\rfloor$) liczby $k \sqrt{2}$ jest mniejsza od 0,01.
 
 Przyjmijmy np: 100 pierwszych k:
